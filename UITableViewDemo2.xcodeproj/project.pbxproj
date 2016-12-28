@@ -15,6 +15,12 @@
 		8CB1C59C1E0F9B9E008F9DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB1C59A1E0F9B9E008F9DA3 /* LaunchScreen.storyboard */; };
 		8CB1C5A71E0F9B9E008F9DA3 /* UITableViewDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1C5A61E0F9B9E008F9DA3 /* UITableViewDemo2Tests.m */; };
 		8CB1C5B21E0F9B9E008F9DA3 /* UITableViewDemo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1C5B11E0F9B9E008F9DA3 /* UITableViewDemo2UITests.m */; };
+		8CB1C5C11E0F9C4F008F9DA3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1C5C01E0F9C4F008F9DA3 /* TableViewController.m */; };
+		8CB1C5C41E0F9E46008F9DA3 /* NumberGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1C5C31E0F9E46008F9DA3 /* NumberGroup.m */; };
+		8CC51ABF1E114AD200C5C3A0 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC51ABD1E114AD200C5C3A0 /* MyCell.m */; };
+		8CC51AC01E114AD200C5C3A0 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC51ABE1E114AD200C5C3A0 /* MyCell.xib */; };
+		8CC71F111E14191F009E2EEE /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC71F101E14191F009E2EEE /* Number.m */; };
+		8CC71F141E142019009E2EEE /* NSObject+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC71F131E142019009E2EEE /* NSObject+Extent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		8CB1C5AD1E0F9B9E008F9DA3 /* UITableViewDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB1C5B11E0F9B9E008F9DA3 /* UITableViewDemo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewDemo2UITests.m; sourceTree = "<group>"; };
 		8CB1C5B31E0F9B9E008F9DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CB1C5BF1E0F9C4F008F9DA3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8CB1C5C01E0F9C4F008F9DA3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		8CB1C5C21E0F9E46008F9DA3 /* NumberGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberGroup.h; sourceTree = "<group>"; };
+		8CB1C5C31E0F9E46008F9DA3 /* NumberGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberGroup.m; sourceTree = "<group>"; };
+		8CC51ABC1E114AD200C5C3A0 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		8CC51ABD1E114AD200C5C3A0 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		8CC51ABE1E114AD200C5C3A0 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		8CC71F0F1E14191F009E2EEE /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		8CC71F101E14191F009E2EEE /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Number.m; sourceTree = "<group>"; };
+		8CC71F121E142019009E2EEE /* NSObject+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extent.h"; sourceTree = "<group>"; };
+		8CC71F131E142019009E2EEE /* NSObject+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extent.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,8 @@
 		8CB1C58B1E0F9B9E008F9DA3 /* UITableViewDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				8CB1C5BF1E0F9C4F008F9DA3 /* TableViewController.h */,
+				8CB1C5C01E0F9C4F008F9DA3 /* TableViewController.m */,
 				8CB1C58F1E0F9B9E008F9DA3 /* AppDelegate.h */,
 				8CB1C5901E0F9B9E008F9DA3 /* AppDelegate.m */,
 				8CB1C5921E0F9B9E008F9DA3 /* ViewController.h */,
@@ -110,6 +129,15 @@
 				8CB1C59A1E0F9B9E008F9DA3 /* LaunchScreen.storyboard */,
 				8CB1C59D1E0F9B9E008F9DA3 /* Info.plist */,
 				8CB1C58C1E0F9B9E008F9DA3 /* Supporting Files */,
+				8CB1C5C21E0F9E46008F9DA3 /* NumberGroup.h */,
+				8CB1C5C31E0F9E46008F9DA3 /* NumberGroup.m */,
+				8CC51ABC1E114AD200C5C3A0 /* MyCell.h */,
+				8CC51ABD1E114AD200C5C3A0 /* MyCell.m */,
+				8CC51ABE1E114AD200C5C3A0 /* MyCell.xib */,
+				8CC71F0F1E14191F009E2EEE /* Number.h */,
+				8CC71F101E14191F009E2EEE /* Number.m */,
+				8CC71F121E142019009E2EEE /* NSObject+Extent.h */,
+				8CC71F131E142019009E2EEE /* NSObject+Extent.m */,
 			);
 			path = UITableViewDemo2;
 			sourceTree = "<group>";
@@ -250,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB1C59C1E0F9B9E008F9DA3 /* LaunchScreen.storyboard in Resources */,
+				8CC51AC01E114AD200C5C3A0 /* MyCell.xib in Resources */,
 				8CB1C5991E0F9B9E008F9DA3 /* Assets.xcassets in Resources */,
 				8CB1C5971E0F9B9E008F9DA3 /* Main.storyboard in Resources */,
 			);
@@ -279,6 +308,11 @@
 				8CB1C5941E0F9B9E008F9DA3 /* ViewController.m in Sources */,
 				8CB1C5911E0F9B9E008F9DA3 /* AppDelegate.m in Sources */,
 				8CB1C58E1E0F9B9E008F9DA3 /* main.m in Sources */,
+				8CB1C5C11E0F9C4F008F9DA3 /* TableViewController.m in Sources */,
+				8CC71F111E14191F009E2EEE /* Number.m in Sources */,
+				8CB1C5C41E0F9E46008F9DA3 /* NumberGroup.m in Sources */,
+				8CC51ABF1E114AD200C5C3A0 /* MyCell.m in Sources */,
+				8CC71F141E142019009E2EEE /* NSObject+Extent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +548,7 @@
 				8CB1C5B81E0F9B9E008F9DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB1C5B91E0F9B9E008F9DA3 /* Build configuration list for PBXNativeTarget "UITableViewDemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +557,7 @@
 				8CB1C5BB1E0F9B9E008F9DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CB1C5BC1E0F9B9E008F9DA3 /* Build configuration list for PBXNativeTarget "UITableViewDemo2UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +566,7 @@
 				8CB1C5BE1E0F9B9E008F9DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
