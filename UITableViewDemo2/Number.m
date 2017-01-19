@@ -23,8 +23,5 @@
     //计算高度
     number.cellHeight=8+21+8+detailDescriptionLabelH+8;
     return number;
-    
-    
-    return number;
 }
 @end

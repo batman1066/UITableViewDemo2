@@ -23,7 +23,20 @@
     self.tableView.sectionIndexBackgroundColor=[UIColor clearColor];
     
     //self.tableView.estimatedRowHeight=80;
-   //self.tableView.rowHeight=UITableViewAutomaticDimension;
+    //self.tableView.rowHeight=UITableViewAutomaticDimension;
+    [self.tableView setEditing:YES animated:YES];
+}
+-(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(nonnull NSIndexPath *)sourceIndexPath toIndexPath:(nonnull NSIndexPath *)destinationIndexPath{
+    //取出 cell对应的数据
+    NumberGroup *sourceGroup=self.dataList[sourceIndexPath.section];
+    Number *sourceNumber=sourceGroup.groupNumbers[sourceIndexPath.row];
+    //删除原数据
+    [sourceGroup.groupNumbers removeObjectAtIndex:sourceIndexPath.row];
+    //取出新的group
+    NumberGroup *descGroup=self.dataList[destinationIndexPath.section];
+    //把新的数据插入到新的位置
+    [descGroup.groupNumbers insertObject:sourceNumber atIndex:destinationIndexPath.row];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
