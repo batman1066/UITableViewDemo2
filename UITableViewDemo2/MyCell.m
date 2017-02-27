@@ -14,6 +14,7 @@
     _cellData=cellData;
     self.titleLabel.text=cellData.titleNumber;
     self.descriptionLabel.text=cellData.detailDescription;
+    
 }
 - (void)awakeFromNib {
     [super awakeFromNib];

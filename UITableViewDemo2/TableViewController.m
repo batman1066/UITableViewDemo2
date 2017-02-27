@@ -26,7 +26,7 @@
     //self.tableView.rowHeight=UITableViewAutomaticDimension;
     [self.tableView setEditing:YES animated:YES];
 }
--(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(nonnull NSIndexPath *)sourceIndexPath toIndexPath:(nonnull NSIndexPath *)destinationIndexPath{
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     //取出 cell对应的数据
     NumberGroup *sourceGroup=self.dataList[sourceIndexPath.section];
     Number *sourceNumber=sourceGroup.groupNumbers[sourceIndexPath.row];
@@ -55,8 +55,8 @@
     MyCell * mycell=[MyCell myCellWithTableView:tableView];
     //从模型中取出数据
     NumberGroup *tempGroup=self.dataList[indexPath.section];
-    NSString *numberString=tempGroup.groupNumbers[indexPath.row];
-    mycell.cellData=numberString;
+    Number *number=tempGroup.groupNumbers[indexPath.row];
+    mycell.cellData=number;
     //传递数据给view
     return mycell;
     
@@ -106,13 +106,13 @@
     [uiAlertView show];
 }
 
-- (nullable NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    NSMutableArray *indexArray=[NSMutableArray array];
-    for (NumberGroup *numberGroup in self.dataList) {
-        [indexArray addObject:numberGroup.groupIndex];
-    }
-    return indexArray;
-}
+//- (nullable NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+//    NSMutableArray *indexArray=[NSMutableArray array];
+//    for (NumberGroup *numberGroup in self.dataList) {
+//        [indexArray addObject:numberGroup.groupIndex];
+//    }
+//    return indexArray;
+//}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *message=[NSString stringWithFormat:@"第%ld段，第%ld行",indexPath.section,indexPath.row ];
     UIAlertView *uiAlertView=[[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

@@ -13,8 +13,9 @@
     NSDictionary *attributes=@{NSFontAttributeName:font};
     
     
-    CGSize contentSize=[text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:attributes
+    CGSize contentSize=[text boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options: NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
+                                       attributes:attributes
         context:nil].size;
-    return contentSize.height;
+    return contentSize.height+21;
 }
 @end
