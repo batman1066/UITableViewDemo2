@@ -123,7 +123,12 @@
     UITableViewRowAction *action2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"移动" handler:nil];
     UITableViewRowAction *action3 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:
     ^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        [self.dataList removeObjectAtIndex:indexPath.row];
+//        [self.dataList removeObjectAtIndex:indexPath.row];
+        //取出 cell对应的数据
+        NumberGroup *sourceGroup=self.dataList[indexPath.section];
+        
+        //删除原数据
+        [sourceGroup.groupNumbers removeObjectAtIndex:indexPath.row];
         [tableView reloadData];
         
     }];
